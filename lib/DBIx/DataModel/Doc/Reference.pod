@@ -2429,7 +2429,7 @@ with arguments, like C<< $row->some_path(-columns => '*') >>.
 Asks the object to expand itself with some objects in foreign tables.
 Does nothing by default. Should be redefined in subclasses,
 most probably through the 
-L</set_auto_expand> method.
+L</define_auto_expand> method.
 If the optional argument C<$with_recursion> is true, then 
 C<auto_expand> is recursively called on the expanded objects.
 
