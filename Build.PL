@@ -14,6 +14,7 @@ my $builder = Module::Build->new(
 	'Carp'                 => 0,
 	'DBI'                  => 0,
 	'SQL::Abstract::More'  => 1.04,
+	'List::MoreUtils'      => 0,
 	'Module::Build'        => 0,
         'Acme::Damn'           => 0,
         'Scalar::Util'         => 0,

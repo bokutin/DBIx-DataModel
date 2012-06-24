@@ -6,6 +6,7 @@ use strict;
 use warnings;
 
 use Carp;
+use List::MoreUtils      qw/uniq/;
 use Module::Load         qw/load/;
 use Params::Validate     qw/validate SCALAR ARRAYREF CODEREF UNDEF BOOLEAN
                                      OBJECT HASHREF/;
