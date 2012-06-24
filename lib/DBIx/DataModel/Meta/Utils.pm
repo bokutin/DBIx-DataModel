@@ -35,7 +35,7 @@ sub define_class {
   %{$_.'::'} or load $_ foreach @{$params{isa}};
   my $class_isa = $params{name}."::ISA";
   not defined  @{$class_isa} or croak "won't overwrite \@$class_isa";
-  @{$class_isa} = @{$params{isa}};
+  @{$class_isa} = uniq @{$params{isa}};
 
   # use mro 'c3' in that package
   mro::set_mro($params{name}, 'c3');
